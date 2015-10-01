@@ -1,5 +1,10 @@
 language: python
+python:
+  - "2.7"
+  - "3.4"
 
-install: true
+install:
+  - "pip install http://jandy.io/jandy-python.zip"
 script:
   - python setup.py test
+  - jandy python setup.py test
